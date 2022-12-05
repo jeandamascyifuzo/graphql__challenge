@@ -1,0 +1,135 @@
+.containers{
+  display: flex;
+}
+.card {
+  width: 200px;
+  margin-right: 20px;
+  height: 120px;
+  padding-bottom: 20px;
+  transition: all .5s;
+  box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
+             -15px -15px 30px rgba(60, 60, 60, 0.082);
+  text-align: center;
+  overflow: hidden;
+}
+
+.card:hover {
+  height: 300px;
+}
+
+.card .header {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #212121;
+  margin-bottom: 16px;
+}
+
+.card .header .img-box {
+  width: 50px;
+}
+
+.card .header .title {
+  font-size: 1.1em;
+  letter-spacing: .1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 4px 0 14px 0;
+  transition: all .5s;
+  color: #edededc5;
+}
+
+.card:hover .header {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+}
+
+.card:hover .card .header .title {
+  padding: 0;
+}
+
+.content {
+  display: flex;
+  text-align: justify;
+  color: #212121;
+  margin: 0 18px;
+}
+
+.card .content p {
+  transition: all .5s;
+  font-size: 1em;
+  margin-bottom: 8px;
+}
+
+.card .content a {
+  color: #1d8122;
+  cursor: pointer;
+  transition: all .5s;
+  font-size: .8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.btn-link{
+  margin-right: 20px;
+}
+.btn-update{
+  background-color: #1d8122;
+  color: white;
+}
+.card .content .btn-update:hover {
+  border-bottom: 1px solid #1d8122;
+}
+.card .content .btn-link:hover {
+  border-bottom: 1px solid #1d8122;
+}
+
+
+.form {
+  padding: 1rem;
+  width: 200px;
+  margin: 40px auto;
+  background-color: gray;
+}
+
+.control {
+  margin-bottom: 0.5rem;
+}
+
+.control label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.control input,
+.control textarea {
+  display: block;
+  font: inherit;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 0.25rem;
+  width: 100%;
+}
+
+.actions {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #1d8122;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #1d8122;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: green;
+  border-color: #1d8122;
+}
